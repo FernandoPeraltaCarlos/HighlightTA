@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+*{
+    font-family: Arial, sans-serif;
+}
+
+@theme {
+    --color-black-primary: #161616;
+    --color-white-primary: #EEE;
+    --color-red-primary: #CD0511;
+}
+
+@layer components {
+
+    .input-text {
+        border: 1px solid black;
+        padding: 1em;
+        @apply text-sm;
+        width: 100%;
+        color:black;
+        &::placeholder{
+            color:black;
+        }
+    }
+}
+
+@utility container{
+    max-width: 1200px;
+}
+
+@utility center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
